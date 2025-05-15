@@ -455,7 +455,7 @@
       });
 
       // Listener para Cricotiroidotomía
-      db.ref("camaraseleccionadaCricotiroidotomia").on('value', (snapshot) => {
+      db.ref("camaraseleccionada").on('value', (snapshot) => {
         const data = snapshot.val();
         if (data && currentMode === 'cricotiroidotomia') {
           syncCameraUI(data.valor, 'cricotiroidotomia');
