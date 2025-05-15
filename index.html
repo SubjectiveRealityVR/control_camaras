@@ -396,7 +396,7 @@
       selectedButton.querySelector('.status-indicator').style.display = 'block';
 
       // Actualizar Firebase con el modo actual
-      const ref = currentMode === 'segismundo' ? "camaraseleccionada" : "camaraseleccionadaCricotiroidotomia";
+      const ref = currentMode === 'segismundo' ? "camaraseleccionada" : "camaraseleccionada";
       
       db.ref(ref).set({ valor: number })
         .then(() => {
